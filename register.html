@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Exquisito - iniciar sesión</title>
+    <!-- Family FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Links Archivos CSS -->
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/animacion.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+
+        <!-- LOGO -->
+        <div class="logo-header">
+            <a href="index.html"><img src="assets/img/logos/home_logo(dark).png" alt="logo Home"></a>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <a class="links" href="index.html">Inicio</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN - (form) -->
+    <main>
+
+    <div class="form-login">
+        <h1>Crear cuenta</h1>
+        <form action="">
+            <div class="label-text">
+                <label for="text">Nombre completo:</label>
+                <input type="text" name="text" id="email" required>
+            </div>
+            <div class="label-email">
+                <label for="email">Correo electronico:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="label-name">
+                <label for="name">Contraseña:</label>
+                <input type="password" name="name" id="name" required>
+            </div>
+            <input type="submit" value="Registrate">
+        </form>
+        <div class="recuperacion_form">
+            <div class="label-checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox" required>
+                <label for="checkbox">Acepto los términos y condiciones</label>
+            </div>
+        </div>
+        <span class="linelarge">O</span>
+        <a class="form-register" href="login.html">¿ya tienes cuenta? Inicia sesión</a>
+    </div>
+    </main>
+
+    <footer>
+        <small> <b>Home</b> &copy; 2024</small>
+    </footer>
+</body>
+</html>
