@@ -4,7 +4,6 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
 }
 
 :root{
@@ -21,8 +20,8 @@
     --curious-blue-950: #0f2942;
 }
 
-body {
-    overflow-x: hidden;
+body{
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* HEADER */
@@ -49,8 +48,6 @@ body {
 }
 /* HEADER - END */
 
-
-/* NAVBAR */
 
 /* Contenido del menu desplegable */
 #toggle-menu{
@@ -99,17 +96,88 @@ body {
     transition: background-color 0.3s ease;
 }
 #navbar .login:hover {
-    background-color: var(--curious-blue-600); /* Cambio de color al pasar el ratón sobre el botón */
+    background-color: var(--curious-blue-600); 
 }
 
 
 /* SECTION - PORTADA */
 #portada{
-    width: 100%;
+    max-width: 1200px;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;    
+    gap: 100px;
+}
+
+#portada .portada-info{
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
 }
+
+.portada-info h1{
+    font-size: 72px;
+    color: #44dcfd;
+    letter-spacing: 4px;
+    -webkit-text-stroke: 2px #000;
+    text-stroke: 1px #000;
+    position: relative;
+}
+
+.portada-info .portada-title{
+    font-size: 32px;
+    color: #ea0205;
+    position: absolute;
+    top: -5px;
+    left: 35px;
+}
+
+.portada-btn{
+    display: flex;
+    gap: 20px;
+}
+
+.portada-btn a{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0072d0;
+    color: var(--curious-blue-50);
+    padding: 20px;
+}
+
+.portada-btn .portada-porcentaje-info{
+    max-width: 100px;
+    width: 90%;
+    height: 100px;
+}
+
+.portada-btn .portada-cuotas-info{
+    max-width: 250px;
+    width: 90%;
+    display: flex;
+    align-items: start;
+    background-color: #525659;
+    height: 180px;
+}
+
+.portada-btn .portada-porcentaje{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.portada-btn .portada-off{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
 /* IMG */
 #portada img{
     width: 100%;
@@ -125,7 +193,7 @@ body {
     gap: 30px;
 }
 
-#ofertas h1{
+#ofertas h2{
     text-align: center;
     font-size: 32px;
 }

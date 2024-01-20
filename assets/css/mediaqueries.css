@@ -13,65 +13,78 @@
 
 /* MAX-WIDTH: 992 */
 @media (max-width: 992px){
-    /* MENU DESPLEGABLE - NAVBAR */
-    #navbar .navbar-list{
-        background-color: #1f1f1f;
-        position: absolute;
-        left: 5%;
-        top: 155px;
-        width: 90%;
-        height: 500px;
-        padding: 9px 20px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: none;
-    }
+/* MENU DESPLEGABLE - NAVBAR */
+#navbar .navbar-list{
+    background-color: #1f1f1f;
+    position: absolute;
+    left: 5%;
+    top: 155px;
+    width: 90%;
+    height: 500px;
+    padding: 9px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
 
-    #navbar .links{
-        color: #fff;
-    }
+#navbar .links{
+    color: #fff;
+}
 
-    #navbar .fa-bars{
-        display: block;
-    }
+#navbar .fa-bars{
+    display: block;
+}
 
-    .social-icons{
-        display: none;
-    }
+.social-icons{
+    display: none;
+}
 
-    /* SECTION - CATEGORIAS */
-    #categorias .categorias-container{
-        padding: 30px 10px;
-    }
+/* PORTADA */
+#portada{
+    height: auto;
+    flex-direction: column;
+}
 
-    /* SECTION - CONTACTO */
-    #contacto .content-form{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+/* PORTADA-INFO */
+#portada .portada-info{
+    align-items: center;
+}
 
-    #contacto .contact-info-container {
-        align-items: center;
-    }
+/* PORTADA-TITLE */
+.portada-info .portada-title{
+    left: auto;
+}
 
-    label{
-        text-align: start;
-    }
 
-    h4.contact-title::before {
-        left: 0;
-    }
 
-    /* SECTION - FOOTER */
-    .pie-pagina .grupo-1{
-        display: block;
-    }
 
-    .box{
-        padding: 18px;
-    }
+#contacto .content-form{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#contacto .contact-info-container {
+    align-items: center;
+}
+
+label{
+    text-align: start;
+}
+
+h4.contact-title::before {
+    left: 0;
+}
+
+/* SECTION - FOOTER */
+.pie-pagina .grupo-1{
+    display: block;
+}
+
+.box{
+    padding: 18px;
+}
 }
 
 /* MAX-WIDTH: 768 */
@@ -88,6 +101,11 @@
 @media (max-width: 400px){
     /* SECTION - OFERTA */
     #ofertas{
+        padding: 10px;
+    }
+
+    /* CATEGORIAS */
+    #categorias .categorias-container{
         padding: 10px;
     }
 }
